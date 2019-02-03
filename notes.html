@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Udacity HTML</title>
+</head>
+<body>
+The doctype tag needs to go to top of every html page you write. Means we are intending this doc to be modern html, prevents bugs <br>
+
+
+<h1>My HTML notes</h1> <br><br>
+<em>Hi there!</em> <br>
+HTML stands for Hypertext Markup Language <br>
+<p> Markup is a form of text that can be interpreted
+in a certain format for design purposes. It includes references,
+which could be videos, links, etc.</p>
+
+Definitions <br>
+<p>Markup - code that tells the browser what
+the text on a web page should look like</p>
+<p>Hypertext - text that can have links or references</p>
+<p>Nesting - the idea that some bits of code can go inside other
+  bits of code</p>
+<p>Syntax - the grammar rules of language </p><br><br>
+p is a block element, br is an inline element. The browser constructs
+invisible boxes around the elements. <br>
+Note that p does not need a closing tag, it is optional, the browser will figure out
+the closing tag on its own<br>
+The br is a void element, so unlike p, it has no contents <br>
+Misc. <br>
+<p>Any text editor that uses plain text works for writing code</p>
+<br>
+sub vs. sup <br>
+subscript and superscript<br>
+H<sub>2</sub>O
+
+<br><br>
+<em>italic</em>
+<strong>boldface</strong>
+<mark>highlighting</mark>
+<br>
+Us h1 through h6 for headlines<br>
+
+<h3>The div element:</h3>
+A block level element<br>
+Div is short for division, you can divide page into different sections<br>
+div has invisible box around it, like p; and can also be formatted<br>
+p is specifically for text, div is generic and contains whatever
+<h3>Lists:</h3>
+ol and ul always need closing tags, li does not<br>
+ol is ordered list - with numbers<br>
+<ol>
+  <li>dog
+  <li>cat
+</ol>
+ul is unordered list - with bullets<br>
+<ul>
+  <li>dog
+  <li>cat
+</ul>
+li and p have optional closing tags, browser figures out where to close it because the
+browser knows there has to be a start tag when it gets to
+the start tag of a new element that cant be inside the last one. For example, when it gets
+to a new p element, it knows previous p element must be closed<br>
+<h5>Nested List Example</h5>
+<ul>
+  <li>good
+    <ol>
+      <li>dogs
+      <li>boats
+    </ol>
+  <li>bad
+    <ol>
+      <li>cats
+      <li>movies
+    </ol>
+</ul>
+<p>remember to use indentation to show which elements are nested <em>inside</em>
+  other elements</p>
+
+<h3>Web Addresses</h3>
+<ul>
+  <li>Protocol
+  <ol>
+    <li> http - insecure, needs domain name
+    <li> https - insecure, needs domain name
+    <li> file - works for <em>your own</em> cpu
+  </ol>
+</ul>
+<h3>Links</h3>
+Use the a for anchor tag, a is an inline element - it does not create a box on the page <br>
+href - hypertext reference <br>
+Add a link to your favorite website <br>
+<a href="http://www.azimutyachts.com">Azimut Yachts</a><br>
+A fully qualified url must be used, which inludes http <br>
+<h3>Adding Images</h3>
+src is source of image, where image is from <br>
+alt is text displayed if image is not found <br>
+img is a void element, an empty element, img is inline element <br>
+To create an image that is a link, put an img element between the open and close tags of an a element <br>
+<a href="https://google.com"><img src="googlelogo.png" alt="Google"></a><br>
+Note: The image in the anchor MUST BE in your HTML file folder...in this case it is Udacity Intro to Programming folder <br>
+<h3>Files and Relative URLs</h3>
+a URL without a :// is always treated as a relative URL, cpu thinks its the name of a file <br>
+for a link to refer to a website, it has to be an absolute url with http <br>
+Attributes always go <em>inside</em> of the anchor, attributes include alt, src, href<br>
+play with size of image like https://placebear.com/100/200 the numbers<br>
+
+<h3>Head and Body</h3>
+head includes title, style, scripts, metadata search engines <br>
+body refers to everything else <br>
+if you dont include head and body tags, the browser will attempt to place them
+in your code itself <br>
+so head elements must appear first, body after <br>
+you cant have a head element such as title in the middle of your document
+
+<h3>Validating HTML</h3>
+https://validator.w3.org/ <br>
+link: <br>
+<a href="https://validator.w3.org/">HTML Validator</a><br>
+
+<h1>CSS</h1>
+<h3>CSS Vocab</h3>
+DOM-Document Object Model-tree structure with node for each HTML element, text, image, any other object <br>
+Selectors-part of css ruleset, indicate which html element the rule is for <br>
+Declaration blocks-other part of css ruleset, say how rule will modify elements indicated by selectors <br>
+CSS rules-composed of a selector followed by a declaration block <br>
+type-simplest kind of selector. Indicates the name of one type of HTML element such as em or li <br>
+class-an attribute that groups elements together that you want to have the same style <br>
+id - an attribute that must be unique to a single element <br>
+
+
+
+
+
+</body>
+</html>
